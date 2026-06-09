@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #000;
+}
+
+#player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.watermark {
+    position: absolute;
+    z-index: 999999;
+    color: rgba(255,255,255,.75);
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #000;
+    pointer-events: none;
+    user-select: none;
+}
+
+#wm1 {
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+}
+
+#wm2 {
+    bottom: 15px;
+    right: 15px;
+    font-size: 13px;
+    color: rgba(255,255,255,.55);
+}
+</style>
+</head>
+
+<body>
+
+<div id="wrap">
+
+    <iframe
+        id="player"
+        src="https://kinescope.io/embed/0cAJVy5Ta3q5v2Jc2B1dBW"
+        allow="autoplay; fullscreen; picture-in-picture"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+    <div id="wm1" class="watermark">MONITORAMENTO R.I.T</div>
+    <div id="wm2" class="watermark">CLIENTE R.I.T</div>
+
+</div>
+
+</body>
+</html>
